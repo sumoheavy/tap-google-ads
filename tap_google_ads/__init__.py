@@ -9,7 +9,7 @@ from singer.schema import Schema
 from tap_google_ads.streams import create_stream
 
 
-REQUIRED_CONFIG_KEYS = ["start_date", "developer_token", "client_id", "client_secret", "refresh_token"]
+REQUIRED_CONFIG_KEYS = ["start_date", "developer_token", "client_id", "client_secret", "refresh_token", "use_proto_plus"]
 LOGGER = singer.get_logger()
 
 

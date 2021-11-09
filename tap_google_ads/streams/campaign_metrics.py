@@ -7,7 +7,7 @@ from google.ads.googleads.client import GoogleAdsClient
 from google.ads.googleads.errors import GoogleAdsException
 
 LOGGER = singer.get_logger()
-CLIENT_CONFIG_KEYS = ["developer_token", "client_id", "client_secret", "refresh_token", "login_customer_id"]
+CLIENT_CONFIG_KEYS = ["developer_token", "client_id", "client_secret", "refresh_token", "login_customer_id", "use_proto_plus"]
 DEFAULT_BACKOFF_SECONDS = 60
 
 
