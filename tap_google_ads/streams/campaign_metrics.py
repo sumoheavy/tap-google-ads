@@ -53,7 +53,7 @@ class CampaignMetrics:
         self.__state = state.copy()
 
         client_config = {key: value for key, value in config.items() if key in CLIENT_CONFIG_KEYS}
-        client = GoogleAdsClient.load_from_dict(config_dict=client_config, version="v8")
+        client = GoogleAdsClient.load_from_dict(config_dict=client_config, version="v8", use_proto_plus=True)
         service = client.get_service("GoogleAdsService")
 
         for customer_id in config["customer_ids"]:
